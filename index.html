@@ -17,7 +17,8 @@
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/views/css/style.css">
     <title>Cinema</title>
 </head>
 
@@ -28,7 +29,7 @@
 
         <!-- barra de navegacion -->
         <nav class="nav">
-            
+
             <a href="#estrenos">
                 <i class="bi bi-camera-reels-fill"></i>
                 Estrenos
@@ -37,7 +38,7 @@
                 <i class="bi bi-film"></i>
                 Cartelera
             </a>
-            <a href="">
+            <a href="#contac">
                 <i class="bi bi-person-lines-fill"></i>
                 Contacto
             </a>
@@ -46,65 +47,71 @@
     </header>
     <main>
         <section id="estrenos" class="carousel">
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
                     <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
                         alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <figcaption>Godzilla x Kong: El Nuevo Imperio</figcaption>
+
                 </figure>
             </article>
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
-                    <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
-                        alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <img class="image-estrenos" src="./public/img/Raices-Azules.webp" alt="pelicula-estreno">
+                    <figcaption>Raices Azules</figcaption>
+
                 </figure>
             </article>
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
-                    <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
-                        alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <img class="image-estrenos" src="./public/img/atrapados-eb-lo-profundo.webp" alt="pelicula-estreno">
+                    <figcaption>Atrapados En Lo Profundo</figcaption>
+
                 </figure>
             </article>
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
-                    <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
-                        alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <img class="image-estrenos" src="./public/img/guerra-civil.webp" alt="pelicula-estreno">
+                    <figcaption>Guerra Civil</figcaption>
+
                 </figure>
             </article>
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
-                    <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
+                    <img class="image-estrenos" src="./public/img/la-maldicion-de-las-bellas-durmientes.webp"
                         alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <figcaption>La Maldicion De Las Bellas Durmientes</figcaption>
+
                 </figure>
             </article>
-            <article class="cont-image">
+            <article class="cont-image-estrenos">
                 <figure class="carousel_item">
-                    <img class="image-estrenos" src="./public/img/Godzilla_y_Kong_El_nuevo_imperio.webp"
-                        alt="pelicula-estreno">
-                    <figcaption>Dune 2</figcaption>
-                    
+                    <img class="image-estrenos" src="./public/img/el-sabor-de-la-vida.webp" alt="pelicula-estreno">
+                    <figcaption>El Sabor De La Vida</figcaption>
+
                 </figure>
             </article>
 
         </section>
-        <h2 class="cartelera-h2">Cartelera</h2>
+
         <section id="cartelera">
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/arthur-el-rey.webp" alt="cartelera">
+                    <figcaption>ARTHUR</figcaption>
+                    <p>Mikael un deportista de resistencia
+                        sueco que se ganó los corazones de millones de personas cuando él y su equipo adoptaron a
+                        Arthur.</p>
+                    <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
+                            Entradas</a></button>
+                </figure>
+            </article>
+            <article class="cont-image">
+                <figure>
+                    <img class="cartelera-image" src="./public/img/aracnidos.webp" alt="cartelera">
+                    <figcaption>Aracnidos</figcaption>
+                    <p>Cinco jóvenes atrapados en un edificio asolado, donde una plaga de arañas asesinas los acecha sin
+                        piedad.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
@@ -113,86 +120,70 @@
                 <figure>
                     <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
                     <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/kung-fu-panda-4.webp" alt="cartelera">
+                    <figcaption>Kung Fu Panda 4</figcaption>
+                    <p>Po se está preparando para convertirse en el Líder Espiritual del Valle de la Paz, por lo que
+                        necesita a alguien que ocupe su lugar como Guerrero Dragón.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/los-de-la-culpa.webp" alt="cartelera">
+                    <figcaption>Los De La Culpa</figcaption>
+                    <p>Desde la cárcel, se sumergen en narraciones cómicas sobre la fiesta descontrolada y sus
+                        experiencias tras las rejas, todo con el fin de probar su inocencia.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/imaginario.webp" alt="cartelera">
+                    <figcaption>Imaginario: Juguete Diabolico</figcaption>
+                    <p>película de terror sobre una niña que encuentra un misterioso osito de peluche llamado Chauncey y
+                        empieza a comportarse de forma extraña.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/sismo.webp" alt="cartelera">
+                    <figcaption>Sismo Magnitud 9.5</figcaption>
+                    <p>
+                        Un repentino terremoto recorrió todo el parque químico del condado de Gucheng, y las fugas en
+                        las tuberías provocaron constantes explosiones.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/secretos-de-un-escandalo.webp" alt="cartelera">
+                    <figcaption>Secretos De Un Escandalo</figcaption>
+                    <p>Revivirá la escandalosa
+                        relación entre Gracie y su marido Joe, cuya relación se inició cuando ella tenía 36 años y él
+                        solamente 13.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
             </article>
             <article class="cont-image">
                 <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
-                    <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
-                            Entradas</a></button>
-                </figure>
-            </article>
-            <article class="cont-image">
-                <figure>
-                    <img class="cartelera-image" src="./public/img/duna2.webp" alt="cartelera">
-                    <figcaption>Dune 2</figcaption>
-                    <p>La princesa Irulan Corrino escribe en secreto que Paul Atreides aún puede estar vivo, mientras
-                        que su padre, el emperador Shaddam IV, está desanimado después de promover la caída de la Casa
-                        Atreides.</p>
+                    <img class="cartelera-image" src="./public/img/la-bestia.webp" alt="cartelera">
+                    <figcaption>La Bestia</figcaption>
+                    <p>Narra la historia de una mujer en 2044, quien decide viajar por el tiempo y regresar a sus vidas
+                        pasadas para limpiar los viejos traumas que contaminan su inconsciente y bloquean su camino
+                        hacia el éxito profesional.</p>
                     <button class="comprar-entradas"><a href="https://paga.nequi.com.co/bdigitalpsp/login">Comprar
                             Entradas</a></button>
                 </figure>
@@ -214,7 +205,7 @@
     </main>
     <footer class="footer">
         <section>
-            <p>© 2024 Cine Riwi. Todos los derechos reservados</p>
+            <p>© 2024 Cine Riwi. Todos los derechos reservados - Mauricio Ciro Riaza</p>
         </section>
     </footer>
 </body>

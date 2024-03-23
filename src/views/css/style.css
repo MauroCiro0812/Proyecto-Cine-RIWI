@@ -27,6 +27,7 @@ a {
     --letra-mediana: 40px;
     --verde-claro:#009929;
     --verde-oscuro:#003400;
+    --verde-medio:#006414 ;
     --blanco-claro:#F9FAFC;
 }
 
@@ -46,10 +47,18 @@ a {
 }
 
 .image-estrenos {
+    padding-top: 40px;
     width: 400px;
-    height: auto;
+    height: 600px;
     margin: 15px;
+    transition: 0.3s;
 
+}
+
+.image-estrenos:hover{
+    height: 625px;
+    width: 425px;
+    cursor: pointer;
 }
 
 .carousel {
@@ -65,20 +74,37 @@ a {
     width: 21.5%;
     scroll-snap-align: start;
     transition: 0.8s;
-    width: 400px;
+    width: auto;
     height: auto;
     margin: 15px;
     transition: 0.3s;
 }
 
-
-
-.cartelera-h2 {
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    font-size:var(--letra-mediana) ;
+.cont-image-estrenos{
+    margin: 30px;
+    text-align: center;
+    padding: 40px;
+    background-color: var(--blanco-claro);
+    box-shadow: 0px 0px 25px rgba(0,0,0, 0.3);
 }
+
+.cont-image-estrenos figure figcaption{
+    font-size: var(--letra-mediana);
+}
+
+.cont-image-estrenos figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Esto es para evitar que el contenido sobrepase el tamaño de la caja */
+    height: 750px;
+    max-width: 400px; /* Ajustamos el valor para que no siga escribiendohorizontalmente */
+    
+    
+}
+
+
 
 #cartelera{
     margin: 50px 30px;
@@ -93,20 +119,21 @@ a {
     margin: 40px;
     text-align: center;
     padding: 40px;
-    background-color: #f5f4f4;
+    background-color: var(--blanco-claro);
     box-shadow: 0px 0px 25px rgba(0,0,0, 0.3);
 }
 
 
 .cartelera-image {
     width: 400px;
-    height: auto;
+    height: 550px;
     margin: 15px;
     transition: 0.3s;
 }
 
 .cartelera-image:hover{
     width: 420px;
+    cursor: pointer;
 }
 
 .cont-image figure figcaption{
@@ -118,19 +145,21 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden; /* Esto es para evitar que el contenido sobrepase el tamaño de la caja */
+    height: 800px;
     max-width: 400px; /* Ajustamos el valor para que no siga escribiendohorizontalmente */
     margin: auto;
     font-size: var(--letra-pequeña);
 }
 
 .comprar-entradas {
-    background-color: #FF6347; /* color del boton */
+    background-color: var(--verde-claro); /* color del boton */
     padding: 15px 32px; /* Este es el espacio interno del botón */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 4px 2px;
+    margin: auto;
     cursor: pointer;
     border-radius: 12px; /* Este es el radio del borde del botón */
     border: none;
@@ -138,11 +167,12 @@ a {
 }
 
 .comprar-entradas:hover {
-    background-color: #FF4500; /* Este es el color del botón cuando se pasa el cursor por encima */
+    cursor: pointer;
+    background-color: var(--verde-medio); /* Este es el color del botón cuando se pasa el cursor por encima */
 }
 
 .comprar-entradas a{
-    color: white; /* Este es el color del texto o letra */
+    color: var(--color-texto); /* Este es el color del texto o letra */
 }
 
 .cont-contacto {
@@ -187,14 +217,13 @@ a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .cont-contacto button:hover {
-    background-color: #2f7239; 
+    cursor: pointer;
+    background-color: var(--verde-medio); 
 }
-
-
 
 
 .footer {
