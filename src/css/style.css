@@ -7,7 +7,9 @@
     box-sizing: border-box;
     font-family: 'Popins', sans-serif; 
     /* font-family: "Caveat", cursive; */
+    
 }
+
 
 a {
     text-decoration: none;
@@ -19,41 +21,28 @@ a {
 }
 
 :root {
-    --azul-oscuro: conic-gradient(black 0%, #142157 25%, #2898ee 50%, #15297c 75%, black 100%);
+    --disenio-verde: conic-gradient(black 0%, #003400 25%, #009929 50%, #006414 75%, black 100%);
     --color-texto: white;
     --letra-pequeña: 18px;
     --letra-mediana: 40px;
+    --verde-claro:#009929;
+    --verde-oscuro:#003400;
+    --blanco-claro:#F9FAFC;
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     height: 100px;
-    background: var(--azul-oscuro);
+    background: var(--disenio-verde);
     display: flex;
     /* font-size: var(--letra-pequeña); */
     justify-content: space-between;
     align-items: center;
     color: var(--color-texto);
-    padding: 0px 15px;
+    padding: 10px 15px;
 
-}
-
-/* #estrenos {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* justify-content: space-around;     
-    align-items: center;
-    gap: 15px;
-
-} */
-.centrar-h2 {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    font-size:var(--letra-mediana) ;
 }
 
 .image-estrenos {
@@ -156,14 +145,61 @@ a {
     color: white; /* Este es el color del texto o letra */
 }
 
+.cont-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
+#contac{
+    padding: 50px 0;
+    background-color: var(--blanco-claro);
+    text-align: center;
+}
+
+.cont-contacto h2 {
+    margin-bottom: 20px;
+    color: var(--verde-claro);
+}
+
+.cont-contacto p {
+    margin-bottom: 30px;
+    color: var(--verde-claro);
+}
+
+.cont-contacto form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cont-contacto input,
+.cont-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--verde-claro);
+    border-radius: 5px;
+}
+
+.cont-contacto button {
+    padding: 10px 20px;
+    background-color: var(--verde-claro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cont-contacto button:hover {
+    background-color: #2f7239; 
+}
 
 
 
 
 .footer {
     height: 100px;
-    background: var(--azul-oscuro);
+    background: var(--disenio-verde);
     display: flex;
     /* font-size: var(--letra-pequeña); */
     justify-content: center;
